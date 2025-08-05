@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Payment Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo i {
+            transform: rotate(45deg);
+            font-size: 2rem;
+            color: #ff7101;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .logo span {
+            font-weight: 200;
+            color: #ff7101;
+            margin-left: 5px;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .details,
+        .receipt-table,
+        .footer {
+            margin-bottom: 20px;
+        }
+
+        .details p {
+            margin: 5px 0;
+        }
+
+        .receipt-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .receipt-table th,
+        .receipt-table td {
+            border: 1px solid #9e9e9edd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .receipt-table th {
+            background-color: #ff7101;
+            color: #fff;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class='bx bx-dumbbell'></i>muscle <span>hustle</span>
+        </div>
+        <br>
+        <div class="details">
+            <p><strong>Transaction ID:</strong> 123456789</p>
+            <p><strong>Date:</strong> July 26, 2024</p>
+            <p><strong>Customer Name:</strong> John Doe</p>
+            <p><strong>Contact:</strong> john.doe@example.com</p>
+        </div>
+        <table class="receipt-table">
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Monthly Membership</td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <td>Discount Applied</td>
+                <td>-$10.00</td>
+            </tr>
+            <tr>
+                <td class="total"><strong>Total Amount</strong></td>
+                <td class="total"><strong>$90.00</strong></td>
+            </tr>
+        </table>
+        <div class="footer">
+            <p><strong>Payment Status:</strong> Successful</p>
+            <p>Thank you for choosing our gym!</p>
+            <p>Contact us: email@example.com | (123) 456-7890</p>
+            <p>Address: 123 Gym Street, Fitness City</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muscle Hustle</title>
+    <!--link css file-->
+    <link rel="stylesheet" href="css\index.css" />
+    <!--link boxiconx file-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--Header section start-->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="bx bx-dumbbell"></i>muscle <span>hustle</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About us</a></li>
+                    <li><a href="courses.html" class="nav-link">courses</a></li>
+                    <li><a href="membership.html" class="nav-link">membership</a></li>
+                    <li><a href="contact.html" class="nav-link">contact us</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="login.html" class="profile"><i class="bx bxs-user"></i></a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+    <!--Header section end-->
+
+    <section class="home">
+        <div class="home-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="slide swiper-slide" style="background: url(body-building.jpg) no-repeat">
+                    <div class="content">
+                        <h1 class="section-title">Muscle Hustle</h1>
+                        <h3 class="section-header">Body building</h3>
+                        <p>
+                            Transform your physique and build muscles mass with <br />
+                            our customized workout programs designed to meet your fitness
+                            goals.
+                        </p>
+                        <a href="contact.html" class="btn">join now!</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide" style="background: url(power-lifting.jpg) no-repeat">
+                    <div class="content">
+                        <h1 class="section-title">Muscle Hustle</h1>
+                        <h3 class="section-header">Power lifting</h3>
+                        <p>
+                            Join our powerlifting community and take your lifting to the
+                            next level with<br />
+                            our expert coaches and top-of-the-line equipment
+                        </p>
+                        <a href="contact.html" class="btn">join now!</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide" style="background: url(calisthenic.jpg) no-repeat">
+                    <div class="content">
+                        <h1 class="section-title">Muscle Hustle</h1>
+                        <h3 class="section-header">Calisthenics</h3>
+                        <p>
+                            Discover the power of body weight trainig with our dynamic
+                            calisthenics program,<br />
+                            designed to help you build strength, flexibility, and endurance.
+                        </p>
+                        <a href="contact.html" class="btn">join now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Home section end-->
+
+    <!-- trainer start -->
+    <div class="containe" style="background: url('home-3.jpg')">
+        <h1><span>Our</span> Trainer</h1>
+        <div class="trainer-card">
+            <img src="images\trainer-1.jpg" alt="Trainer 1" />
+            <div class="info">
+                <h3>John Doe</h3>
+                <p>Certified Personal Trainer</p>
+                <p>Specializes in strength training</p>
+            </div>
+        </div>
+        <div class="trainer-card">
+            <img src="images\trainer-2.jpg" alt="Trainer 2" />
+            <div class="info">
+                <h3>Jane Smith</h3>
+                <p>Certified Yoga Instructor</p>
+                <p>Teaches various yoga styles</p>
+            </div>
+        </div>
+        <div class="trainer-card">
+            <img src="images\trainer-3.jpg" alt="Trainer 3" />
+            <div class="info">
+                <h3>Mark Johnson</h3>
+                <p>Certified Fitness Coach</p>
+                <p>Provides personalized workout plans</p>
+            </div>
+        </div>
+        <div class="trainer-card">
+            <img src="images\trainer-1 (2).jpg" alt="Trainer 4" />
+            <div class="info">
+                <h3>Jane Smith</h3>
+                <p>Certified Yoga Instructor</p>
+                <p>Teaches various yoga styles</p>
+            </div>
+        </div>
+    </div>
+    <!-- trainer end  -->
+
+    <!-- footer section start-->
+    <section class="footer">
+        <div class="credit">&copy; 2023 MuscleHustle. All rights reserved.</div>
+    </section>
+    <!--footer section end -->
+
+    <!--scroll top button-->
+    <div class="up">
+        <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <script>
+        //scroll top button
+        const up = document.querySelector(".up");
+        window.onscroll = () => {
+            up.classList.toggle("show", window.scrollY >= 560);
+        };
+        up.onclick = () => {
+            window.scrollTo({ behavior: "smooth", top: "0" });
+        };
+    </script>
+    <!--scroll top button-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--link js file-->
+    <script src="js\index.js"></script>
+
+
+
+</body>
+
+</html>

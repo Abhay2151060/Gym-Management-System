@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Hustle</title>
+    <!--link css file-->
+    <link rel="stylesheet" href="css\contact.css">
+    <!--link boxiconx file-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--Header section start-->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class='bx bx-dumbbell'></i>muscle <span>hustle</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link ">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About us</a></li>
+                    <li><a href="courses.html" class="nav-link ">courses</a></li>
+                    <li><a href="membership.html" class="nav-link ">membership</a></li>
+                    <li><a href="#" class="nav-link active">contact us</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="login.html" class="profile"><i class='bx bxs-user'></i></a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </header>
+    <!--Header section end-->
+
+    <!-- cantact us start -->
+    <div class="bodyyy">
+        <div class="jyoo">
+            <form action="Contact.php" method="POST">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter a valid email address" required
+                    pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}">
+
+                <label for="pno">Phone Number</label>
+                <input type="text" id="pno" name="pno" placeholder="Enter a valid phone number" required maxlength="10"
+                    pattern="([0-9+\s()-]){10,}">
+
+                <label for="query">Query</label>
+                <textarea id="query" name="query" placeholder="Enter your message" style="height:125px"></textarea>
+
+                <center><input type="submit" name="submit" value="Submit"></center>
+            </form>
+        </div>
+    </div>
+    <!-- cantact us end -->
+    <!-- footer section start-->
+    <section class="footer">
+        <div class="credit">&copy; 2023 MuscleHustle. All rights reserved.</div>
+    </section>
+    <!--footer section end -->
+
+    <!--scroll top button-->
+    <div class="up">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+    <script>
+        //scroll top button
+        const up = document.querySelector(".up");
+        window.onscroll = () => {
+            up.classList.toggle("show", window.scrollY >= 560);
+        };
+        up.onclick = () => {
+            window.scrollTo({ behavior: "smooth", top: "0" });
+        };
+    </script>
+    <!--scroll top button-->
+</body>
+
+</html>

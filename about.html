@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muscle Hustle</title>
+
+    <!--link css file-->
+    <link rel="stylesheet" href="css\about.css" />
+    <!--link boxiconx file-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Header section start-->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="bx bx-dumbbell"></i>muscle <span>hustle</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link active">About us</a></li>
+                    <li><a href="courses.html" class="nav-link">courses</a></li>
+                    <li><a href="membership.html" class="nav-link">membership</a></li>
+                    <li><a href="contact.html" class="nav-link">contact us</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="login.html" class="profile"><i class="bx bxs-user"></i></a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+    <!--Header section end-->
+
+    <!--About section Start-->
+    <section class="about">
+        <div class="about-container">
+            <div class="left">
+                <img src="images\about-1.jpg" alt="" />
+                <img src="images\about-2.jpg" alt="" />
+            </div>
+            <div class="right">
+                <h1 class="section-title">why choose us?</h1>
+                <h3 class="section-header">best reason</h3>
+                <p>
+                    Muscle Hustle is not just a gym, it's a way of life. Widely
+                    recognized as one of India's premium fitness destinations. Muscle
+                    Hustle is an ISO certified 9001-2008 company, which is endorsed by
+                    top Bollywood stars and international athletes.<br />
+                    Choose your favorite class and start now.Remeber the only bad
+                    workout is the one you didn't
+                </p>
+                <br />
+                <br />
+                <br />
+                <div class="choose__data">
+                    <div class="choose__group">
+                        <h2 class="choose__number">200+</h2>
+                        <p class="choose__subtitle">Total Members</p>
+                    </div>
+                    <div class="choose__group">
+                        <h2 class="choose__number">50+</h2>
+                        <p class="choose__subtitle">Best trainers</p>
+                    </div>
+                    <div class="choose__group">
+                        <h2 class="choose__number">25+</h2>
+                        <p class="choose__subtitle">Programs</p>
+                    </div>
+                    <div class="choose__group">
+                        <h2 class="choose__number">100+</h2>
+                        <p class="choose__subtitle">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About section end-->
+
+    <!--photos session start-->
+    <div class="containerr">
+        <h1>image <span>gallery</span></h1>
+
+        <div class="image-containerr">
+            <div class="image"><img src="images\indoor.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor5.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor2.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor3.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor4.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor6.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor7.jpg" alt="" /></div>
+            <div class="image"><img src="images\indoor8.jpg" alt="" /></div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images\indoor.jpg" alt="" />
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".image-containerr img").forEach((image) => {
+            image.onclick = () => {
+                document.querySelector(".popup-image").style.display = "block";
+                document.querySelector(".popup-image img").src =
+                    image.getAttribute("src");
+            };
+        });
+
+        document.querySelector(".popup-image span").onclick = () => {
+            document.querySelector(".popup-image").style.display = "none";
+        };
+    </script>
+    <!--photos session end-->
+
+    <!-- reviews start -->
+    <section class="reviews">
+        <h1 class="headerr">R e v i e w s</h1>
+
+        <div class="rev-container">
+            <div class="rev">
+                <div class="image">
+                    <img src="images\img2.jpg" alt="" />
+                </div>
+                <div class="naav">
+                    <h1>Abhay Solapure</h1>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(0, 0, 0)"></i>
+                </div>
+                <p>
+                    "This gym is fantastic! The group fitness classes are fun, and the
+                    instructors are super motivating. The gym is always clean, and the
+                    locker rooms are well-kept. I've lost weight and gained confidence
+                    since joining.".
+                </p>
+            </div>
+
+            <div class="rev">
+                <div class="image">
+                    <img src="images\courses-4.png" alt="" />
+                </div>
+                <div class="naav">
+                    <h1>Jyotsna Mhade</h1>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(0, 0, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(0, 0, 0)"></i>
+                </div>
+                <p>
+                    "I'm new to this gym, and I'm impressed with the clean and
+                    well-maintained facilities. The personal trainers are fantastic and
+                    take the time to understand your goals. The only downside is that it
+                    can get a bit crowded during peak hours."
+                </p>
+            </div>
+
+            <div class="rev">
+                <div class="image">
+                    <img src="images\home-6.jpg" alt="" />
+                </div>
+                <div class="naav">
+                    <h1>Kanishk Gothi</h1>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                    <i class="bx bxs-star" style="color: rgb(255, 165, 0)"></i>
+                </div>
+                <p>
+                    "I've been a member for a while now, and the staff is always
+                    welcoming. The gym has a good mix of free weights and machines. I'd
+                    love to see some more advanced equipment added. But overall, it's a
+                    great place to work out."
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- reviews end -->
+
+    <!-- footer section start-->
+    <section class="footer">
+        <div class="credit">&copy; 2023 MuscleHustle. All rights reserved.</div>
+    </section>
+    <!--footer section end -->
+
+    <!--scroll top button-->
+    <div class="up">
+        <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <script>
+        //scroll top button
+        const up = document.querySelector(".up");
+        window.onscroll = () => {
+            up.classList.toggle("show", window.scrollY >= 560);
+        };
+        up.onclick = () => {
+            window.scrollTo({ behavior: "smooth", top: "0" });
+        };
+    </script>
+    <!--scroll top button-->
+
+    <!--link js file-->
+    <script src="js\index.js"></script>
+</body>
+
+</html>
